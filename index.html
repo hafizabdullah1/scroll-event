@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+        <style>
+            body{
+                transition: .5s;
+                background: #000;
+                color: white;
+            }
+            *{
+                margin: 0;
+                padding:0;
+            }
+            nav{
+                /* height: 10vh; */
+                background: #98C1D9;
+                position: sticky;
+                top: 0;
+                transition: .5s;
+                color: white;
+               
+            }
+            li{
+                cursor: pointer;
+            }
+            main{
+                width: 60%;
+                padding: 20px;
+                margin: auto;
+            }
+            p{
+                font-size: 20px;
+            }
+            .form input {
+                height: 40px;
+            }
+            .feed{
+                height: 28vh;
+                width: 30vw;
+                border: 1px solid lightgrey;
+                border-radius: 10px;
+                background: #98c1d9cb;
+                position: absolute;
+                top: 33px;
+                left: 35%;
+                display: flex;
+                justify-content: center ;
+                align-items: center;
+                font-size: 22px;
+                text-transform: capitalize;
+                transform: scale(0);
+                opacity: 0;
+                transition: .4s;
+            }
+            .feedParent{
+                position: relative;
+            }
+            
+            .back{
+                animation-name: move;
+                animation-iteration-count: 1;
+                animation-timing-function: linear;
+                animation-duration: 4s;
+                animation-fill-mode: forwards;
+            }
+            @keyframes move {
+                0%{
+                    transform: scale(0);
+                    opacity: 0;
+                }
+                25%{
+                    transform: scale(1);
+                    opacity: 1;
+                }
+                50%{
+                    transform: scale(1);
+                    opacity: 1;
+                }
+                75%{
+                    opacity: 1;
+                    transform: scale(1);
+                }
+                100%{
+                    opacity: 0;
+                    transform: scale(1);
+                }
+            }
+        </style>
+    <title>Events</title>
+</head>
+<body>
+    <nav class="container-fluid" id="navBar">
+        <div class="row d-flex justify-content-between h-100">
+            <div class=" firstcol col-12 col-sm-4 col-md-2 d-flex justify-content-center align-items-center ">
+                <h5 class="h6 fw-normal pt-1 pb-1 ps-3 pe-3">
+                    <b>BR</b>Architects
+                </h5>
+            </div>
+            <div class="col-5 col-lg-3  d-flex justify-content-around h-100 align-items-center">
+                <ul class="d-none mainul w-100 d-sm-flex listed-none justify-content-center gap-4 list-unstyled pt-3">
+                    <li>Project</li>
+                    <li>Home</li>
+                    <li>About</li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- MAIN SECTION -->
+    <main>
+        <h1>Scroll Event</h1>
+        <br>
+        <p>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsa perferendis nobis quis debitis iusto maiores, repellat quasi neque, obcaecati architecto vero odio eveniet tenetur qui assumenda ea ut harum sint eius non possimus. Architecto quibusdam, aspernatur soluta minus porro saepe, ad rerum odio adipisci numquam sint quod repellendus tempora, mollitia fugiat ipsa quae. Cupiditate animi sit asperiores esse? Vitae maiores, nemo eveniet tenetur corrupti sit quisquam molestias sapiente aliquam, facilis, odio provident? Ullam nisi ex tempora rerum provident autem aliquam.
+        </p>
+        <h1>Scroll Event</h1> <br>
+        <p>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsa perferendis nobis quis debitis iusto maiores, repellat quasi neque, obcaecati architecto vero odio eveniet tenetur qui assumenda ea ut harum sint eius non possimus. Architecto quibusdam, aspernatur soluta minus porro saepe, ad rerum odio adipisci numquam sint quod repellendus tempora, mollitia fugiat ipsa quae. Cupiditate animi sit asperiores esse? Vitae maiores, nemo eveniet tenetur corrupti sit quisquam molestias sapiente aliquam, facilis, odio provident? Ullam nisi ex tempora rerum provident autem aliquam.
+        </p>
+        <h1>Scroll Event</h1> <br>
+        <p>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsa perferendis nobis quis debitis iusto maiores, repellat quasi neque, obcaecati architecto vero odio eveniet tenetur qui assumenda ea ut harum sint eius non possimus. Architecto quibusdam, aspernatur soluta minus porro saepe, ad rerum odio adipisci numquam sint quod repellendus tempora, mollitia fugiat ipsa quae. Cupiditate animi sit asperiores esse? Vitae maiores, nemo eveniet tenetur corrupti sit quisquam molestias sapiente aliquam, facilis, odio provident? Ullam nisi ex tempora rerum provident autem aliquam.
+        </p>
+        <h1>Scroll Event</h1> <br>
+        <p>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsa perferendis nobis quis debitis iusto maiores, repellat quasi neque, obcaecati architecto vero odio eveniet tenetur qui assumenda ea ut harum sint eius non possimus. Architecto quibusdam, aspernatur soluta minus porro saepe, ad rerum odio adipisci numquam sint quod repellendus tempora, mollitia fugiat ipsa quae. Cupiditate animi sit asperiores esse? Vitae maiores, nemo eveniet tenetur corrupti sit quisquam molestias sapiente aliquam, facilis, odio provident? Ullam nisi ex tempora rerum provident autem aliquam.
+        </p>
+        <h1>Scroll Event</h1> <br>
+        <p>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsa perferendis nobis quis debitis iusto maiores, repellat quasi neque, obcaecati architecto vero odio eveniet tenetur qui assumenda ea ut harum sint eius non possimus. Architecto quibusdam, aspernatur soluta minus porro saepe, ad rerum odio adipisci numquam sint quod repellendus tempora, mollitia fugiat ipsa quae. Cupiditate animi sit asperiores esse? Vitae maiores, nemo eveniet tenetur corrupti sit quisquam molestias sapiente aliquam, facilis, odio provident? Ullam nisi ex tempora rerum provident autem aliquam.
+        </p>
+        <h1>Scroll Event</h1> <br>
+        <p>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsa perferendis nobis quis debitis iusto maiores, repellat quasi neque, obcaecati architecto vero odio eveniet tenetur qui assumenda ea ut harum sint eius non possimus. Architecto quibusdam, aspernatur soluta minus porro saepe, ad rerum odio adipisci numquam sint quod repellendus tempora, mollitia fugiat ipsa quae. Cupiditate animi sit asperiores esse? Vitae maiores, nemo eveniet tenetur corrupti sit quisquam molestias sapiente aliquam, facilis, odio provident? Ullam nisi ex tempora rerum provident autem aliquam.
+        </p>
+        <h1>Scroll Event</h1> <br>
+        <p>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsa perferendis nobis quis debitis iusto maiores, repellat quasi neque, obcaecati architecto vero odio eveniet tenetur qui assumenda ea ut harum sint eius non possimus. Architecto quibusdam, aspernatur soluta minus porro saepe, ad rerum odio adipisci numquam sint quod repellendus tempora, mollitia fugiat ipsa quae. Cupiditate animi sit asperiores esse? Vitae maiores, nemo eveniet tenetur corrupti sit quisquam molestias sapiente aliquam, facilis, odio provident? Ullam nisi ex tempora rerum provident autem aliquam.
+        </p>
+    </main>
+
+
+    <div class="container-fluid pt-5 pb-5 mt-4 pe-1 ps-1">
+        <h2 class="fw-normal ps-4 border-bottom border-secondary pb-3">About</h2>
+        <p class="ps-3 pt-5">Lets get in touch and talk about your next project</p>
+        <div class="container-fluid feedParent">
+            <div class="feed">
+                thanks for your feedback !
+            </div>
+            <div class="row gy-3">
+                <div class="col-12 form">
+                    <input type="text" name="" id="myinp" placeholder="Name" class="ps-2 w-100">
+                </div>
+                <div class="col-12 form">
+                    <input type="text" name="" id="myinp" placeholder="E-Mail" class="ps-2 w-100">
+                </div>
+                <div class="col-12 form">
+                    <input type="text" name="" id="myinp" placeholder="Subject" class="ps-2 w-100">
+                </div>
+                <div class="col-12 form">
+                    <input type="text" name="" id="myinp" placeholder="Comment" class="ps-2 w-100">
+                </div>
+                <div class="col-12 form">
+                    <button type="button" class="btn btn-dark" onclick="show()">Send Message</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+
+
+
+
+<script>
+    let nav = document.getElementById('navBar');
+    let body = document.getElementsByTagName('body')[0];
+
+    window.addEventListener('scroll', () => {
+        if (window.pageYOffset > 50) {
+            nav.style.background = "#293241";
+            nav.style.height = "13vh";
+            body.style.background = "white";
+            body.style.color = "black";
+        } else {
+            nav.style.height = "10vh";
+            nav.style.background = "#98C1D9";
+            body.style.background = "black";
+            body.style.color = "white";
+        }
+    });
+
+    function show() {
+        var feed = document.querySelector('.feed');
+        var myinp = document.querySelectorAll('#myinp');
+
+        if (myinp.value === "") {
+            alert('Please fill the form.');
+        } else {
+            feed.classList.add('back');
+            document.querySelectorAll('#myinp').value = "";
+
+            setTimeout(() => {
+                feed.classList.remove('back');
+            }, 2000);
+        }
+    }
+</script>
+
+
+
+
+
+
+
+
+
+
+<!-- <script>
+    let nav=document.getElementById('navBar');
+    let body= document.getElementsByTagName('body')[0]
+
+    window.addEventListener('scroll',()=>{
+        if(window.pageYOffset > 50){
+            // console.log("over 50px...");
+            nav.style.background="#293241"
+            nav.style.height=" 13vh";
+            body.style.background="white"
+            body.style.color="black"
+        }
+        else{
+            nav.style.height=" 10vh"
+            // console.log("under 50px");
+            nav.style.background="#98C1D9";
+            body.style.background="black"
+            body.style.color="white"
+        }
+    })
+
+
+    let show=()=>{
+        var feed = document.getElementsByClassName('feed')[0];
+        var myinp =document.querySelectorAll('#xmyinp');
+        console.log(myinp.value);
+
+
+        if(myinp.value = ""){
+            alert('Please fill the Form')
+        }
+
+        else {
+            feed.classList.add('back')
+            myinp.innerText="";
+            // console.log('work');
+            console.log("work here");
+            // setTimeout(()=>{
+            // feed.classList.remove('back')
+            // }),3000
+        }
+    }
+</script> -->
+</html>
